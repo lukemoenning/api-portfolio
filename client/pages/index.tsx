@@ -1,5 +1,7 @@
-const HomePage = () => {
-  return <div>Home Page</div>
+import Docs from '@/app/components/docs/docs'
+
+const DocsPage = () => {
+  return <Docs />
 }
 
-export default HomePage
+export default DocsPage

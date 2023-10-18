@@ -1,15 +1,18 @@
 import type { AppProps } from 'next/app'
+import { ThemeProvider } from 'next-themes'
 
-import PageWrapper from '@/app/components/page-wrapper/page-wrapper'
+import PageLayout from '@/app/components/page-layout/page-layout'
 
 import '../app/globals.css'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
-      <PageWrapper>
-        <Component {...pageProps} />
-      </PageWrapper>
+      <ThemeProvider>
+        <PageLayout>
+          <Component {...pageProps} />
+        </PageLayout>
+      </ThemeProvider>
     </>
   )
 }
