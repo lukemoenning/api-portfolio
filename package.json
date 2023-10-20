@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "prettier-format": "prettier --config .prettierrc './**/*.{js,jsx,ts,tsx,css,md,json}' --write",
-    "prepare": "husky install",
-    "create-hook": "husky add .husky/pre-commit 'npm run prettier-format'"
+    "prepare": "husky install && npm --prefix ./client husky install",
+    "create-hook": "husky add .husky/pre-commit 'npm run prettier-format && npm --prefix ./client run lint'"
   },
   "dependencies": {},
   "devDependencies": {
