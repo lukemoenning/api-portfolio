@@ -9,7 +9,7 @@ interface TextProps {
 
 const Text: React.FC<TextProps> = ({
   content,
-  color = '#000',
+  color = 'var(--text-color)',
   tag = 'p',
   margin = '5px'
 }) => {

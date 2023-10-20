@@ -11,7 +11,7 @@ const Link: React.FC<LinkProps> = ({
   href,
   text,
   tag = 'p',
-  color = '#000'
+  color = 'var(--primary-color)'
 }) => {
   const CustomTag = tag as keyof JSX.IntrinsicElements
 

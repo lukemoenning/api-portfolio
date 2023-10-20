@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-import { theme } from '@/app/libs/theme'
+import { theme } from '@/app/libs/random-variables'
 
 export const FooterWrapper = styled.div`
-  background-color: purple;
+  background-color: var(--footer-color);
   display: flex;
   flex-direction: column;
   align-items: center;
