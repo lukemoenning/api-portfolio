@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
     <S.FooterWrapper>
       <CustomImage src="/images/logo.png" alt="logo" width={50} height={50} />
       <S.FooterContent>
-        <Link href={'https://lukemoenning.com'} text={'lukemoenning.com'} />
+        <Link href={'https://lukemoenning.com/contact'} text={'CONTACT'} />
         <Text content={'|'} margin={'0px 10px 0px 10px'} />
         <Text content={'COPYRIGHT © 2023 LUKE MOENNING.'} />
         <Text content={'|'} margin={'0px 10px 0px 10px'} />
