@@ -8,6 +8,6 @@ export const theme = {
     }
   },
   footer: {
-    height: '60px'
+    height: '200px'
   }
 }

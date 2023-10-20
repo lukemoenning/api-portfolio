@@ -1,6 +1,6 @@
 import * as S from './navigation-link.styles'
 
-const NavigationLink = () => {
+const NavigationLink: React.FC = () => {
   return (
     <S.NavigationLinkWrapper>
       <div>THIS IS A NAV LINK</div>

@@ -8,11 +8,13 @@ import SideNavigation from '@/app/components/navigation/side-navigation/side-nav
 import TopNavigation from '@/app/components/navigation/top-navigation/top-navigation'
 import Error404 from '@/pages/404'
 
-type PageLayoutProps = {
+interface PageLayoutProps {
   children?: ReactNode
 }
 
-const PageLayout = ({ children }: PageLayoutProps) => {
+const PageLayout: React.FC<PageLayoutProps> = ({
+  children
+}: PageLayoutProps) => {
   const is404Page = isValidElement(children) && children.type === Error404
 
   return (
