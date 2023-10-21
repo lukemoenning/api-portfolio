@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { randomVariables } from '@/app/libs/random-variables'
+import { RVs } from '@/app/libs/random-variables'
 
 export const PageLayoutWrapper = styled.div`
   display: flex;
@@ -12,7 +12,7 @@ export const PageLayoutRightWrapper = styled.div`
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  margin-left: ${randomVariables.navigation.side.width};
+  margin-left: ${RVs.navigation.side.width};
 `
 
 export const PageLayoutContent = styled.div`

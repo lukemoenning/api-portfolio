@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
-import { randomVariables } from '@/app/libs/random-variables'
+import { RVs } from '@/app/libs/random-variables'
 
 export const FooterWrapper = styled.div`
   background-color: var(--footer-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: ${randomVariables.footer.height};
+  min-height: ${RVs.footer.height};
   width: 100%;
   justify-content: center;
 `

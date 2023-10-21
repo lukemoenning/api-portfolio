@@ -5,14 +5,13 @@ import NavigationLink, {
 } from '@/app/components/navigation/navigation-link/navigation-link'
 import ThemeToggle from '@/app/components/theme-toggle/theme-toggle'
 import CustomImage from '@/app/libs/basic-components/custom-image/custom-image'
+import { RVs } from '@/app/libs/random-variables'
 
 const SideNavigation: React.FC = () => {
-  const documentationBaseURL = 'https://lukemoenning.com'
-
-  const navigationItems: NavigationLinkProps[] = [
-    { text: 'Introduction', href: documentationBaseURL },
-    { text: 'Authentication', href: documentationBaseURL },
-    { text: 'Endpoints', href: documentationBaseURL }
+  const sideNavigationItems: NavigationLinkProps[] = [
+    { text: 'Introduction', href: RVs.baseURL },
+    { text: 'Authentication', href: RVs.baseURL },
+    { text: 'Endpoints', href: RVs.baseURL }
   ]
 
   return (
@@ -22,7 +21,7 @@ const SideNavigation: React.FC = () => {
         <ThemeToggle />
       </S.SideNavigationTop>
 
-      {navigationItems.map((item) => (
+      {sideNavigationItems.map((item) => (
         <NavigationLink
           key={'side-navigation-' + item.text}
           href={item.href}

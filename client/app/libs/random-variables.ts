@@ -1,4 +1,5 @@
-export const randomVariables = {
+export const RVs = {
+  baseURL: 'http://localhost:3000',
   navigation: {
     side: {
       width: '250px',
