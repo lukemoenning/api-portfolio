@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const PageLayoutWrapper = styled.div`
   display: flex;
+  background-color: var(--background);
 `
 
 export const PageLayoutContentWrapper = styled.div`

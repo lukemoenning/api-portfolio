@@ -2,9 +2,9 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalTheme = createGlobalStyle`
   :root {
-    --background: #fff;
-    --text-color: #000;
-    --primary-color: #ff0000;
+    --background: #ffffff;
+    --text-color: #000000;
+    --primary-color: #003366;
     --secondary-color: #6C757D;
     --tertiary-color: #28A745;
     --sidenav-color: #F8F9FA;
@@ -12,9 +12,9 @@ export const GlobalTheme = createGlobalStyle`
   }
 
   [data-theme="dark"] {
-    --background: #000;
-    --text-color: #FFF;
-    --primary-color: #FFF;
+    --background: #000000;
+    --text-color: #ffffff;
+    --primary-color: #66b2ff;
     --secondary-color: #1B2631;
     --tertiary-color: #145A32;
     --sidenav-color: #1B2631;

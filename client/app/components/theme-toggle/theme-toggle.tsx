@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react'
 
 import { useTheme } from 'next-themes'
 
+import * as S from './theme-toggle.styles'
+
 const ThemeSwitch: React.FC = () => {
-  const [mounted, setMounted] = useState(false)
+  const [mounted, setMounted] = useState<boolean>(false)
   const { theme, setTheme } = useTheme()
 
   // useEffect only runs on the client, so now we can safely show the UI
@@ -15,12 +17,14 @@ const ThemeSwitch: React.FC = () => {
     return null
   }
 
+  const toggleThemeHandler = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark')
+  }
+
   return (
-    <select value={theme} onChange={(e) => setTheme(e.target.value)}>
-      <option value="system">System</option>
-      <option value="dark">Dark</option>
-      <option value="light">Light</option>
-    </select>
+    <S.ThemeToggleWrapper onClick={toggleThemeHandler}>
+      <S.SoccerBall theme={theme} />
+    </S.ThemeToggleWrapper>
   )
 }
 
