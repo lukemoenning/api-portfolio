@@ -20,11 +20,11 @@ const PageLayout: React.FC<PageLayoutProps> = ({
   return (
     <S.PageLayoutWrapper>
       {!is404Page && <SideNavigation />}
-      <S.PageLayoutContentWrapper>
+      <S.PageLayoutRightWrapper>
         {!is404Page && <TopNavigation />}
         <S.PageLayoutContent>{children}</S.PageLayoutContent>
         {!is404Page && <Footer />}
-      </S.PageLayoutContentWrapper>
+      </S.PageLayoutRightWrapper>
     </S.PageLayoutWrapper>
   )
 }

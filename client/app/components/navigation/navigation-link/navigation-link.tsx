@@ -1,9 +1,19 @@
 import * as S from './navigation-link.styles'
 
-const NavigationLink: React.FC = () => {
+import Link from '@/app/libs/basic-components/link/link'
+
+export interface NavigationLinkProps {
+  href: string
+  text: string
+}
+
+const NavigationLink: React.FC<NavigationLinkProps> = ({
+  href,
+  text
+}: NavigationLinkProps) => {
   return (
     <S.NavigationLinkWrapper>
-      <div>THIS IS A NAV LINK</div>
+      <Link href={href} text={text} color={'var(--text-color)'} />
     </S.NavigationLinkWrapper>
   )
 }
