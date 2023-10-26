@@ -9,6 +9,9 @@ export const GlobalTheme = createGlobalStyle`
     --tertiary-color: #28A745;
     --sidenav-color: #F8F9FA;
     --footer-color: #F8F9FA;
+    --code-block-body: #697386;
+    --code-block-header: #3C4257;
+    --divider: #E9ECEF;
   }
 
   [data-theme="dark"] {
@@ -19,5 +22,8 @@ export const GlobalTheme = createGlobalStyle`
     --tertiary-color: #145A32;
     --sidenav-color: #1B2631;
     --footer-color: #1B2631;
+    --code-block-body: #697386;
+    --code-block-header: #3C4257;
+    --divider: #E9ECEF;
   }
 `

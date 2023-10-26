@@ -11,5 +11,9 @@ export const RVs = {
   },
   footer: {
     height: '200px'
+  },
+  codeBlock: {
+    borderRadius: '10px',
+    padding: '15px'
   }
 }

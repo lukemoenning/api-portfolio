@@ -10,12 +10,13 @@ export const PageLayoutWrapper = styled.div`
 export const PageLayoutRightWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
   width: 100%;
   margin-left: ${RVs.navigation.side.width};
 `
 
 export const PageLayoutContent = styled.div`
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   width: 100%;
   overflow: auto;
