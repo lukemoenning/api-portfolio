@@ -1,3 +1,5 @@
+import React from 'react'
+
 import * as S from './docs.styles'
 
 import DocsSection from '@/app/components/documentation/docs-section/docs-section'
@@ -40,14 +42,22 @@ const Docs: React.FC = () => {
   return (
     <S.DocsWrapper>
       {docsSections.map((section, index) => (
-        <>
+        <React.Fragment key={'docs-section-fragment-' + section.title}>
           <DocsSection
             key={'docs-section-' + section.title}
             title={section.title}
             bodyParagraphs={section.bodyParagraphs}
           />
-          {index !== docsSections.length - 1 ? <S.DocsDivider /> : null}
-        </>
+          {/* <iframe
+            height="400px"
+            width="100%"
+            src="https://replit.com/@moenningluke/testrunner?embed=true#main.py"
+            sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"
+          ></iframe> */}
+          {index !== docsSections.length - 1 ? (
+            <S.DocsDivider key={'docs-section-divider-' + section.title} />
+          ) : null}
+        </React.Fragment>
       ))}
     </S.DocsWrapper>
   )

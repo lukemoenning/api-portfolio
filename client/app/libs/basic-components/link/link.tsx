@@ -5,7 +5,7 @@ interface LinkProps {
   text: string
   tag?: TagType
   color?: string
-  hoverColor?: string
+  hovercolor?: string
 }
 
 type TagType = 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
@@ -15,13 +15,13 @@ const Link: React.FC<LinkProps> = ({
   text,
   tag = 'p',
   color = 'var(--primary-color)',
-  hoverColor = color
+  hovercolor = color
 }) => {
   const CustomTag = tag as keyof JSX.IntrinsicElements
 
   return (
     <CustomTag>
-      <S.LinkWrapper href={href} color={color} hoverColor={hoverColor}>
+      <S.LinkWrapper href={href} $color={color} $hovercolor={hovercolor}>
         {text}
       </S.LinkWrapper>
     </CustomTag>
